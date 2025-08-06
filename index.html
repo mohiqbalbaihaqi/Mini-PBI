@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+  </head>
+  <body class="bg-gray-100">
+    <header class="relative">
+      <!-- Navbar -->
+      <nav
+        class="fixed top-5 left-1/2 -translate-x-1/2 bg-gray-100 opacity-75 rounded-full w-[90vw] max-w-xl p-5 shadow-lg z-30"
+      >
+        <ul
+          class="flex flex-wrap justify-center gap-4 md:gap-8 text-base md:text-lg"
+        >
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">Tentang</a></li>
+          <li><a href="#project" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- end of Navbar -->
+
+      <!-- Hero -->
+      <div
+        id="home"
+        class="relative w-full h-[60vw] min-h-[350px] flex items-center justify-center bg-gray-800 overflow-hidden"
+      >
+        <img
+          src="asset/Hero.jpg"
+          alt="hero.jpg"
+          class="absolute inset-0 w-full h-full object-cover opacity-30 z-0"
+        />
+        <div
+          class="relative z-10 flex flex-col items-center justify-center w-full h-full px-4"
+        >
+          <h2
+            class="text-3xl md:text-5xl font-bold text-gray-100 mb-4 drop-shadow-lg text-center"
+          >
+            Welcome to <span class="text-lime-600">My Portfolio</span>
+          </h2>
+          <p
+            class="text-base md:text-xl text-gray-100 mb-8 max-w-xl text-center"
+          >
+            Explore my projects and skills in web development, and more.
+          </p>
+        </div>
+      </div>
+      <!-- end of Hero -->
+    </header>
+    <main>
+      <!-- Resume Content -->
+      <section id="about">
+        <div
+          class="min-h-screen flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12 px-4"
+        >
+          <div
+            class="w-48 h-48 md:w-84 md:h-84 rounded-full bg-blue-600 flex items-center justify-center relative shadow-xl mb-6 md:mb-0"
+          >
+            <img
+              src="asset/my-photos.png"
+              alt="my-photos.png"
+              class="absolute bottom-0 rounded-full w-48 h-56 md:w-84 md:h-98 object-cover z-10"
+            />
+          </div>
+
+          <div class="w-full max-w-xl">
+            <h1 class="text-3xl md:text-5xl font-bold py-2">
+              Moh. Iqbal Baihaqi
+            </h1>
+            <h3 class="text-xl md:text-3xl font-semibold">
+              S1 Teknik Informatika
+            </h3>
+            <p class="text-justify text-base md:text-lg mb-4">
+              Lulusan S1 Teknik Informatika Universitas Tadulako, memiliki minat
+              kuat dalam bidang Teknologi Informasi. Mampu bekerja secara tim
+              maupun mandiri, serta memiliki semangat belajar tinggi untuk
+              mengembangkan keterampilan professional.
+            </p>
+            <ul class="space-y-2 relative">
+              <span
+                class="absolute left-2 top-2 w-0.5 h-[calc(100%-1rem)] bg-red-400"
+              ></span>
+              <li class="flex items-start gap-3 text-base md:text-lg">
+                <span
+                  class="mt-1 w-4 h-4 rounded-full border-2 border-red-400 bg-white z-10"
+                ></span>
+                <span class="font-bold">Dari:</span> Kabupaten Tolitoli,
+                Sulawesi Tengah.
+              </li>
+              <li class="flex items-start gap-3 text-base md:text-lg">
+                <span
+                  class="mt-1 w-4 h-4 rounded-full border-2 border-red-400 bg-white z-10"
+                ></span>
+                <span class="font-bold">Tinggal:</span> Kota Tolitoli, Kabupaten
+                Tolitoli.
+              </li>
+              <li class="flex items-start gap-3 text-base md:text-lg">
+                <span
+                  class="mt-1 w-4 h-4 rounded-full border-2 border-red-400 bg-white z-10"
+                ></span>
+                <span class="font-bold">Usia:</span> 25
+              </li>
+              <li class="flex items-start gap-3 text-ba md:text-lg">
+                <span
+                  class="mt-1 w-4 h-4 rounded-full border-2 border-red-400 bg-white z-10"
+                ></span>
+                <span class="font-bold">Jenis Kelamin:</span> Laki-Laki
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- end of Resume Content -->
+
+      <!-- Keahlian Content -->
+      <section class="bg-white py-10">
+        <div class="mx-auto max-w-6xl px-4">
+          <h3
+            class="text-3xl font-semibold text-center text-blue-500 w-50 justify-self-center rounded-xl bg-blue-100 py-2"
+          >
+            Keahlian
+          </h3>
+          <div class="grid grid-cols-2 gap-x-20 p-5">
+            <!-- Keahlian 1 -->
+            <div class="mb-6">
+              <div class="mb-1">
+                <span class="text-lg">HTML</span>
+              </div>
+              <div
+                class="w-full bg-white border-2 border-red-400 rounded-full h-8 flex items-center"
+              >
+                <div
+                  class="bg-red-400 h-6 rounded-full ml-1 my-1 flex items-center justify-center text-white text-sm"
+                  style="width: 95%"
+                >
+                  95%
+                </div>
+              </div>
+            </div>
+            <!-- end of Keahlian 1 -->
+
+            <!-- Keahlian 2 -->
+            <div class="mb-6">
+              <div class="mb-1">
+                <span class="text-lg">PHP</span>
+              </div>
+              <div
+                class="w-full bg-white border-2 border-red-400 rounded-full h-8 flex items-center"
+              >
+                <div
+                  class="bg-red-400 h-6 rounded-full ml-1 my-1 flex items-center justify-center text-white text-sm"
+                  style="width: 30%"
+                >
+                  30%
+                </div>
+              </div>
+            </div>
+            <!-- end of Keahlian 2 -->
+
+            <!-- Keahlian 3 -->
+            <div class="mb-6">
+              <div class="mb-1">
+                <span class="text-lg">CSS</span>
+              </div>
+              <div
+                class="w-full bg-white border-2 border-red-400 rounded-full h-8 flex items-center"
+              >
+                <div
+                  class="bg-red-400 h-6 rounded-full ml-1 my-1 flex items-center justify-center text-white text-sm"
+                  style="width: 70%"
+                >
+                  70%
+                </div>
+              </div>
+            </div>
+            <!-- end of Keahlian 3 -->
+
+            <!-- Keahlian 4 -->
+            <div class="mb-6">
+              <div class="mb-1">
+                <span class="text-lg">Laravel</span>
+              </div>
+              <div
+                class="w-full bg-white border-2 border-red-400 rounded-full h-8 flex items-center"
+              >
+                <div
+                  class="bg-red-400 h-6 rounded-full ml-1 my-1 flex items-center justify-center text-white text-sm"
+                  style="width: 30%"
+                >
+                  30%
+                </div>
+              </div>
+            </div>
+            <!-- end of Keahlian 4 -->
+
+            <!-- Keahlian 5 -->
+            <div class="mb-6">
+              <div class="mb-1">
+                <span class="text-lg">Javascript</span>
+              </div>
+              <div
+                class="w-full bg-white border-2 border-red-400 rounded-full h-8 flex items-center"
+              >
+                <div
+                  class="bg-red-400 h-6 rounded-full ml-1 my-1 flex items-center justify-center text-white text-sm"
+                  style="width: 25%"
+                >
+                  25%
+                </div>
+              </div>
+            </div>
+            <!-- end of Keahlian 5 -->
+
+            <!-- Keahlian 6 -->
+            <div class="mb-6">
+              <div class="mb-1">
+                <span class="text-lg">Database MySQL</span>
+              </div>
+              <div
+                class="w-full bg-white border-2 border-red-400 rounded-full h-8 flex items-center"
+              >
+                <div
+                  class="bg-red-400 h-6 rounded-full ml-1 my-1 flex items-center justify-center text-white text-sm"
+                  style="width: 25%"
+                >
+                  25%
+                </div>
+              </div>
+            </div>
+            <!-- end of Keahlian 6 -->
+          </div>
+        </div>
+      </section>
+      <!-- end of Keahlian Content -->
+
+      <!-- Pendidikan Content -->
+      <section class="py-10">
+        <h3
+          class="text-2xl font-semibold m-4 bg-blue-100 text-blue-500 rounded-xl p-2 justify-self-center"
+        >
+          Pendidikan
+        </h3>
+        <div class="container p-5 flex justify-evenly">
+          <!-- Perguruan Tinggi -->
+          <div class="card-1 bg-white max-w-sm rounded-xl">
+            <p class="bg-red-400 rounded-e-full text-center w-32 py-2">
+              2018 - 2025
+            </p>
+            <div class="content-card p-4">
+              <h4 class="text-lg font-semibold">S1 Teknik Informatika</h4>
+              <h6 class="text-sm">Universitas Tadulako</h6>
+              <p class="text-base">
+                IPK 3.78/4.00. Mendalami Pengembangan, Perancangan, dan
+                Pemeliharaan Perangkat Lunak.
+              </p>
+            </div>
+          </div>
+          <!-- end of Perguruan Tinggi -->
+
+          <!-- SMA -->
+          <div class="card-2 bg-white max-w-sm rounded-xl">
+            <p class="bg-red-400 rounded-e-full text-center w-32 py-2">
+              2014 - 2017
+            </p>
+            <div class="content-card p-4">
+              <h4 class="text-lg font-semibold">
+                Sekolah Menengah Atas - Program IPA
+              </h4>
+              <h6 class="text-sm">SMA Negeri 1 Tolitoli</h6>
+              <p class="text-base">
+                Lulusan SMA Negeri 1 Tolitoli, Jurusan Ilmu Pengetahuan Alam.
+                Memperdalam pengetahuan di bidang Matematika dan Teknologi
+                melalui berbagai mata pelajaran.
+              </p>
+            </div>
+          </div>
+          <!-- end of SMA -->
+
+          <!-- SMP -->
+          <div class="card-3 bg-white max-w-sm rounded-xl">
+            <p class="bg-red-400 rounded-e-full text-center w-32 py-2">
+              2014 - 2017
+            </p>
+            <div class="content-card p-4">
+              <h4 class="text-lg font-semibold">Sekolah Menengah Pertama</h4>
+              <h6 class="text-sm">SMP Negeri 3 Tolitoli</h6>
+              <p class="text-base">
+                Lulusan SMA Negeri 1 Tolitoli, Jurusan Ilmu Pengetahuan Alam.
+                Memperdalam pengetahuan di bidang Matematika dan Teknologi
+                melalui berbagai mata pelajaran.
+              </p>
+            </div>
+          </div>
+          <!-- end of SMP -->
+        </div>
+      </section>
+      <!-- end of Pendidikan Content -->
+
+      <!-- Layanan Content -->
+      <section class="bg-white py-10">
+        <h3
+          class="text-2xl font-semibold m-4 bg-blue-100 text-blue-500 rounded-xl p-2 justify-self-center"
+        >
+          Layanan
+        </h3>
+        <p class="text-3xl font-light text-center">
+          Apa yang bisa saya lakukan?
+        </p>
+        <div class="container p-5 flex justify-evenly">
+          <div class="card-1 max-w-sm py-5">
+            <div class="bg-gray-100 rounded-full justify-self-center p-5 mb-3">
+              <svg
+                class="w-[48px] h-[48px] text-gray-800"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="M6 8h.01M9 8h.01M12 8h.01M4 11h16M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z"
+                />
+              </svg>
+            </div>
+            <div class="content-card">
+              <h6 class="text-center font-semibold">Web Developer</h6>
+              <p class="text-center">
+                Membangun dan mengembangkan situs web menggunakan HTML, CSS,
+                JavaScript, dan PHP.
+              </p>
+            </div>
+          </div>
+
+          <!-- Layanan 2 -->
+          <div class="card-2 max-w-sm py-5">
+            <div class="bg-gray-100 rounded-full justify-self-center p-5 mb-3">
+              <svg
+                class="w-[48px] h-[48px] text-gray-800"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="M5.35709 16V5.78571c0-.43393.34822-.78571.77777-.78571H18.5793c.4296 0 .7778.35178.7778.78571V16M5.35709 16h-1c-.55229 0-1 .4477-1 1v1c0 .5523.44771 1 1 1H20.3571c.5523 0 1-.4477 1-1v-1c0-.5523-.4477-1-1-1h-1M5.35709 16H19.3571M9.35709 8l2.62501 2.5L9.35709 13m4.00001 0h2"
+                />
+              </svg>
+            </div>
+            <div class="content-card">
+              <h6 class="text-center font-semibold">Full Stack Developer</h6>
+              <p class="text-center">
+                Menggabungkan keahlian di frontend (HTML, CSS, Javascript) dan
+                Backend (PHP, Laravel) untuk membangun aplikasi web yang
+                lengkap.
+              </p>
+            </div>
+          </div>
+          <!-- end of Layanan 2 -->
+        </div>
+      </section>
+      <!-- end of Layanan Content -->
+
+      <!-- projects -->
+      <section id="project">
+        <h3
+          class="text-2xl font-semibold m-4 bg-blue-100 text-blue-500 rounded-xl p-2 justify-self-center"
+        >
+          Portfolio
+        </h3>
+        <p class="text-3xl font-light text-center">
+          Apa yang bisa saya lakukan?
+        </p>
+        <div class="container p-5 flex justify-evenly">
+          <div class="card-1 bg-white max-w-sm rounded-lg">
+            <img
+              src="asset/creative-ins.png"
+              alt="creative-ins.png"
+              class="p-2 w-full h-50 object-cover"
+            />
+            <div
+              class="card-content pb-5 flex flex-col justify-center items-center"
+            >
+              <p class="text-xl mb-2 p-2">Creative Ins</p>
+              <span
+                class="bg-red-400 text-center text-white hover:shadow-md p-2 rounded-full"
+              >
+                <a href="https://mohiqbalbaihaqi.github.io/creative_ins/"
+                  >Visit Site</a
+                >
+              </span>
+            </div>
+          </div>
+
+          <!-- project 2 -->
+          <div class="card-1 bg-white max-w-sm rounded-lg">
+            <img
+              src="asset/todo-list.png"
+              alt="creative-ins.png"
+              class="p-2 w-full h-50 object-cover"
+            />
+            <div
+              class="card-content pb-5 flex flex-col justify-center items-center"
+            >
+              <p class="text-xl mb-2 p-2">Todo List (Mini Project)</p>
+              <span
+                class="bg-red-400 text-center text-white hover:shadow-md p-2 rounded-full"
+              >
+                <a
+                  href="https://revou-coding-camp.github.io/codingcamp-7-jul-25-mohiqbalbaihaqi/"
+                  >Visit Site</a
+                >
+              </span>
+            </div>
+          </div>
+          <!-- end of project 2 -->
+
+          <!-- Project 3 -->
+          <div class="card-3 bg-white max-w-sm rounded-lg">
+            <img
+              src="asset/calculator.png"
+              alt="creative-ins.png"
+              class="p-2 w-full h-50 object-cover"
+            />
+            <div
+              class="card-content pb-5 flex flex-col justify-center items-center"
+            >
+              <p class="text-xl mb-2 p-2">
+                Calculator Sederhana (Mini Project)
+              </p>
+              <span
+                class="bg-red-400 text-center text-white hover:shadow-md p-2 rounded-full"
+              >
+                <a href="https://mohiqbalbaihaqi.github.io/calculator-app/"
+                  >Visit Site</a
+                >
+              </span>
+            </div>
+          </div>
+          <!-- end of Project 3 -->
+        </div>
+      </section>
+      <!-- end of Projects -->
+
+      <!-- contact -->
+      <section id="contact" class="bg-white py-10">
+        <h3
+          class="text-2xl font-semibold m-4 bg-blue-100 text-blue-500 rounded-xl p-2 justify-self-center"
+        >
+          Contact
+        </h3>
+        <p class="text-3xl font-light text-center mb-10">Hubungi Saya</p>
+        <form action="" class="flex flex-col justify-center items-center">
+          <input
+            type="text"
+            placeholder="Nama Lengkap"
+            class="border-2 py-3 px-2 rounded-xl mb-2 w-100"
+          />
+          <div class="flex space-x-2">
+            <input
+              type="email"
+              placeholder="Alamat Email"
+              class="border-2 py-3 px-2 rounded-xl mb-2"
+            />
+            <input
+              type="text"
+              placeholder="Subyek"
+              class="border-2 py-3 px-2 rounded-xl mb-2"
+            />
+          </div>
+          <textarea
+            name=""
+            id=""
+            placeholder="Pesan..."
+            class="border-2 py-3 px-2 rounded-xl mb-2 w-100"
+            rows="5"
+          ></textarea>
+          <button
+            class="bg-blue-500 p-3 rounded-xl text-white hover:bg-blue-800 hover:shadow-lg w-100"
+          >
+            Kirim Pesan
+          </button>
+        </form>
+      </section>
+      <!-- end of contact -->
+    </main>
+    <footer class="bg-blue-400">
+      <div
+        class="footer-content flex flex-col md:flex-row justify-evenly items-center gap-8 p-10"
+      >
+        <!-- alamat -->
+        <section class="text-center md:text-left">
+          <h4 class="font-semibold text-xl text-gray-300">
+            Dimana anda dapat menemukan saya
+          </h4>
+          <p class="font-bold text-xl text-gray-300">--------------</p>
+          <p class="text-xl">
+            Jalan Belibis No. 22, Tuweley, Baolan, Kabupaten Tolitoli.
+          </p>
+        </section>
+
+        <!-- sosmed -->
+        <section class="text-center md:text-left">
+          <h4 class="font-semibold text-xl text-gray-300">Ikuti saya</h4>
+          <p class="font-bold text-xl text-gray-300">--------------</p>
+          <p class="text-xl"><a href="">Instagram</a></p>
+          <p class="text-xl"><a href="">Tiktok</a></p>
+          <p class="text-xl"><a href="">Github</a></p>
+          <p class="text-xl"><a href="">Linkedin</a></p>
+        </section>
+
+        <!-- contact -->
+        <section class="text-center md:text-left">
+          <h4 class="font-semibold text-xl text-gray-300">Kontak Saya</h4>
+          <p class="font-bold text-xl text-gray-300">--------------</p>
+          <p class="text-xl">mohiqbalbaihaqi16@gmail.com</p>
+        </section>
+      </div>
+      <p class="text-lg text-center p-2">
+        Copyright ©2025. All right reserved | Created By Mi.B Dev
+      </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
